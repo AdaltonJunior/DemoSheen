@@ -5,8 +5,10 @@ import java.util.Objects;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name="PRODUCT")
 public class Product {
 	
 	public Product() {
@@ -81,6 +83,14 @@ public class Product {
 
 	public void setImg(String img) {
 		this.img = img;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 	public Integer getRating() {
